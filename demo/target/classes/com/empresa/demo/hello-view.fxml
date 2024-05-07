@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.empresa.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <TextField fx:id="emailField" promptText="Correo"/>
+    <PasswordField fx:id="passwordField" promptText="Contraseña"/>
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirmar Contraseña" visible="false"/>
+    <DatePicker fx:id="registerDateField" visible="false"/>
+    <CheckBox fx:id="privacyCheckBox" text="Aceptar privacidad" visible="false"/>
+    <CheckBox fx:id="termsCheckBox" text="Aceptar términos y condiciones" visible="false"/>
+    <Button text="Registrarse" onAction="#onRegisterButtonClick"/>
+    <Button text="Iniciar sesión" onAction="#onLoginButtonClick"/>
+</VBox>
